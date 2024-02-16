@@ -8,7 +8,7 @@
 }
 
 main {
-    background-image: url(/assets/background-image.png);
+    background-image: url(../assets/background-image.png);
     display: flex;
     width: 100vw;
     justify-content: center;
