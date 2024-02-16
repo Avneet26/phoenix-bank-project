@@ -33,7 +33,7 @@ main {
 
 .widgit_nav svg {
     background: rgb(135, 142, 255);
-    background: linear-gradient(147deg, rgba(135, 142, 255, 1) 0%, rgba(255, 225, 157, 1) 100%);
+    background: linear-gradient(147deg,#51adee 0%, #1581cd 100%);
     color: white;
     height: 20px;
     width: 20px;
