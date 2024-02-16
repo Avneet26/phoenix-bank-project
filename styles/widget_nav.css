@@ -8,6 +8,7 @@
 }
 
 main {
+    background-image: url(/assets/background-image.png);
     display: flex;
     width: 100vw;
     justify-content: center;
@@ -43,7 +44,7 @@ main {
 	/* border: 1px solid rgba(255, 166, 0, 0.333); */
 	text-decoration: none;
 	align-items: flex-start;
-	background-color: white;
+	background-color: #fffd;
 	border-radius: 25px;
 	display: flex;
 	cursor: pointer;
@@ -55,9 +56,14 @@ main {
 
 
 .widgit_heading_container {
-    max-width: 1200px;
+    background-image: linear-gradient(white, white,transparent);
+    width: 100vw;
     text-align: center;
-    margin: 100px 0 0 0;
+    text-align: center;
+	padding: 100px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .widgit_heading_container h2 {
     font-size: 42px;
@@ -70,12 +76,6 @@ main {
     font-weight: lighter;
     line-height: 1.5;
     max-width: 900px;
-}
-
-.widgit_heading_container {
-	max-width: 1200px;
-	text-align: center;
-	margin: 100px 0 0 0;
 }
 
 .widgit_container {
@@ -93,8 +93,9 @@ main {
 
 .widgit_nav:hover {
     opacity: 1;
+    background-color: white;
 	box-shadow: 2px 2px 30px #0001;
-	transform: scale(1.02);
+	transform: scale(1.01);
 }
 
 .remove_underline {
