@@ -26,6 +26,8 @@ main {
     font-size: 20px;
     color: black;
     margin: 20px 0;
+    font-weight: 600;
+    letter-spacing: 0px;
 }
 
 .widgit_nav svg {
@@ -108,7 +110,8 @@ main {
 .widget_nav_content {
     text-align: justify;
     padding: 0;
-    font-size: 13px;
+    font-size: 15px;
     margin: 0;
     color: #666;
+    line-height:1.2;
 }
