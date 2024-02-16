@@ -1,0 +1,37 @@
+#lineone, #linetwo{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;   
+    
+}
+
+.widgit_nav{
+    width: 350px;
+    height: 350px;
+    background-color: beige;
+    border-radius: 25px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.widgit_nav:hover {
+    background-color: bisque;
+    font-size: 60px;
+}
+
+.remove_underline{
+    text-decoration: none;
+}
+
+.widgit_nav > *{
+    font-size: 20px;
+}
+
+.widget_nav_content{
+    text-align: justify;
+    padding: 15px;
+
+}
