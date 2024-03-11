@@ -1,7 +1,12 @@
 .footer-container.temp-container {
+    display: flex;
     background-color: #51adee;
     color: white;
     padding: 30px 60px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    
 }
 .footer-social-link-container ul{
     display: flex;
@@ -16,10 +21,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
 }
 .logo-logo-container {
     display: flex;
     align-items: center;
+    max-width: 1200px;
 }
 .footer-brand-heading {
 	font-size: 35px;
@@ -41,4 +49,29 @@
     border-top: 1px solid white;
     margin-top: 30px;
     padding-top: 10px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1255px) {
+    .logo-top-branding-container{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .footer-brand-heading{
+        font-size: 25px;
+    }
+    .logo-logo-container{
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .footer-brand-heading{
+        font-size: 20px;
+    }
+    
 }

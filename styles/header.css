@@ -5,9 +5,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 5px 0px;
+    padding: 20px;
+    max-width: 1200px;
 }
 .header-logo-container h1 {
     display: flex;
@@ -24,6 +24,7 @@
 .header-nav-container {
     display: flex;
     justify-content: space-between;
+    
 }
 .header-login-container {
     display: flex;
@@ -58,4 +59,38 @@
     background-color: #51adee;
     color: white;
     border: 2px solid white;
+}
+
+.mobile-nav-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media screen and (max-width: 1255px) {
+    .main-header{
+    padding: 20px;
+    }   
+}
+
+@media screen and (max-width: 1000px) {
+    .header-container{
+        flex-direction: column;
+        padding-top: 0%;
+    }
+    .header-nav-container{
+        margin: 20px 0;
+        flex-direction: column;
+        display: none;
+    }
+    .main-header{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:999px) {
+    .mobile-nav-container{
+        flex-direction: column;
+        display: none;
+    }   
 }
