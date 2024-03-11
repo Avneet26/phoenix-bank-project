@@ -31,6 +31,7 @@ main {
     letter-spacing: 0px;
 }
 
+
 .widgit_nav svg {
     background: rgb(135, 142, 255);
     background: linear-gradient(147deg,#51adee 0%, #1581cd 100%);
@@ -72,12 +73,14 @@ main {
     font-weight: 400;
     margin-bottom: 40px;
     letter-spacing: -1px;
+    padding: 0 15px;
 }
 .widgit_heading_container p {
     /* font-size: ; */
     font-weight: lighter;
     line-height: 1.5;
     max-width: 900px;
+    padding: 0 15px;
 }
 
 .widgit_container {
@@ -116,3 +119,11 @@ main {
     color: #666;
     line-height:1.2;
 }
+
+@media (max-width: 480px) {
+    .widgit_nav{
+        width: 300px;
+    }
+    
+}
+
