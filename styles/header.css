@@ -24,7 +24,6 @@
 .header-nav-container {
     display: flex;
     justify-content: space-between;
-    
 }
 .header-login-container {
     display: flex;
@@ -61,36 +60,85 @@
     border: 2px solid white;
 }
 
-.mobile-nav-container{
+.mobile-nav-container {
     display: flex;
     flex-direction: column;
-    
 }
 
 @media screen and (max-width: 1255px) {
-    .main-header{
-    padding: 20px;
-    }   
+    .main-header {
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
-    .header-container{
-        flex-direction: column;
-        padding-top: 0%;
+    .header-container {
+        padding-top: 0;
+        position: relative;
+        padding-bottom: 7px;
     }
-    .header-nav-container{
+    .header-logo-container h1{
+        display: none;
+    }
+    .header-nav-container {
         margin: 20px 0;
         flex-direction: column;
         display: none;
     }
-    .main-header{
+    .main-header {
         padding: 0;
+    }
+    .header-container > .header-login-container {
+        display: none;
+    }
+    .mobile-menu-button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        cursor: pointer;
+    }
+    .mobile-nav-container.close {
+        display: none;
+    }
+    .mobile-nav-container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 82px;
+        background-color: #51adee;
+        left: 0;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .mobile-nav-container a {
+        margin-bottom: 9px;
+    }
+    .mobile-menu-button > * {
+        font-size: 20px;
+    }
+    .mobile-login-section.header-login-container {
+        justify-content: flex-start;
+        margin-top: 20px;
+        padding-left: 9px;
+    }
+    .mobile-menu-button.close > svg:nth-child(1) {
+        display: none;
+    }
+    .mobile-menu-button > svg:nth-child(2) {
+        display: none;
+    }
+    .mobile-menu-button.close > svg:nth-child(2) {
+        display: block;
     }
 }
 
-@media screen and (min-width:999px) {
-    .mobile-nav-container{
+@media screen and (min-width: 999px) {
+    .mobile-nav-container {
         flex-direction: column;
         display: none;
-    }   
+    }
+    .mobile-menu-button {
+        display: none;
+    }
 }
