@@ -1,0 +1,129 @@
+main{
+    background-image: none !important; 
+}
+.about_main_text{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.about_inner_container{
+    max-width: 480px;
+    height: 220px;
+    padding: 40px 0;
+    color: white;
+}
+
+.about_banner h2{
+    font-weight: 700;
+    font-size: 30px;
+}
+.about_first_content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1200px;
+}
+
+.about_banner{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    background:  linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../assets/about_us_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about_history_content{
+    max-width: 1200px;
+    padding: 40px 0;
+}
+
+.about_history_content p{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.about_history_content h3{
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.about_career_img{
+    max-width: 500px;
+}
+
+.about_career_img img{
+    height: 100%;
+    width: 100%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.about_career{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #1580cd6e;
+}
+
+.about_career_text{
+    padding: 20px;
+}
+
+.about_career_text h3{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.about_career_text p{
+    margin-bottom: 30px;
+}
+
+.about_career_text a{
+    text-decoration: none;
+    color: #1581cd;
+}
+
+.about_career_text a:hover{
+    text-decoration: underline;
+}
+
+.about_career_text li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.about_career_news_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:1200px) {
+    .about_history_content{
+        padding: 20px;
+    }
+
+    .about_inner_container{
+        padding: 20px;
+    }
+
+    .about_career{
+        flex-direction: column;
+        margin: 20px;
+    }
+}
