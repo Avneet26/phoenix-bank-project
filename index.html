@@ -31,32 +31,7 @@
                     <a href="#">Home</a>
                     <a href="#Services-section">Services</a>
                     <a href="#">Smart Advice</a>
-                    <a href="#" class="btn-open-popup" onclick="openForm()">Contact Us</a>
-                        <div id="popupOverlay"  class="overlay-container"> 
-                            <div class="popup-box"> 
-                                <h2 style="color: green;">Submit your query form</h2> 
-                                <form class="form-container"> 
-                                    <label class="form-label" for="name"> Name:</label> 
-                                    <input class="form-input" type="text" placeholder="Enter Your Name" id="name" name="name" required> 
-            
-                                    <label class="form-label" for="query">Query:</label> 
-                                    <input class="form-input" type="query" placeholder="Enter Your query" id="query" name="query" required> 
-            
-                                    <button class="btn-submit" type="submit">Submit</button> 
-                                    <button class="btn-close-popup" onclick="closeForm()">Close</button> 
-                                </form>
-                            </div>
-                        </div>
-                        <script> 
-                            function openForm() { 
-                                //document.getElementById("popupOverlay").style.display = "show";
-                                const overlay = document.getElementById('popupOverlay'); 
-                                overlay.classList.toggle('show'); 
-                            } 
-                            function closeForm() {
-                                document.getElementById('popupOverlay').style.display = "close";
-                            }
-                        </script>
+                    <a href="#content">Contact Us</a>
                     <a href="./about.html">About</a>
                 </section>
                 <button type="button" class="mobile-menu-button close">
@@ -67,7 +42,7 @@
                     <a href="#">Home</a>
                     <a href="#Services-section">Services</a>
                     <a href="#">Smart Advice</a>
-                    <a href="#" class="btn-open-popup" onclick="openForm()">Contact Us</a>
+                    <a href="#">Contact Us</a>
                     <a href="#">About</a>
                     <section class="mobile-login-section header-login-container">
                         <a href="#">Login</a>
@@ -148,7 +123,25 @@
                 </a>
             </div>
         </main>
+        <div class="contactus-banner">
+            <div id="content" class="modal-content">
+                <h3>Contact us</h3>
+                <h1>Have banking questions?</h1>
+                <p>Get automated answers to most common banking questions.</p><br>
+                <form class="form-container"> 
+                    <label class="form-label" for="name"> Name:</label> 
+                    <input class="form-input" type="text" placeholder="Enter Your Name" id="name" name="name" required> 
+                    <br><br>
+                    <label class="form-label" for="query">Query:</label> 
+                    <input class="form-input" type="query" placeholder="Enter Your query" id="query" name="query" required> 
+                    <br><br>
+                    <button class="btn-submit" type="submit">Submit</button>
+                    <br><br>
+                </form>
+                <p>Sign onto online banking for more personalized help.</p>
+            </div>
 
+        </div>
         <footer class="footer-container temp-container">
             <div class="logo-top-branding-container">
                 <div class="logo-logo-container">
