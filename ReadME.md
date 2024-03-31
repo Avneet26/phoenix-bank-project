@@ -17,9 +17,9 @@ Contribution:
 
     Feature #2- 
 
-    Avneet: AboutUS Page CSS, Mobile Nav Menu
+    Avneet: Mobile Nav Menu JS
 
-    Uttkarsh: AboutUS page HTML, Homepage Responsive Design
+    Uttkarsh: AboutUS page HTML and CSS, Homepage Responsive Design
 
     Yamini: Contact section CSS and Form validation
 
