@@ -2,8 +2,8 @@ html {
     scroll-behavior: smooth;
 }
 .contactus-banner{
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
     background-image: url('./../assets/laptop.jpg');
     background-size: cover;
     background-repeat: repeat;
@@ -11,13 +11,18 @@ html {
     width: 100%;
     font-family: "PT Sans", sans-serif;
 }
-
+.content-wrapper{
+    margin:0 auto;
+    display: flex;
+    justify-content: flex-end;
+    max-width:1200px;
+}
 .modal-content {
     border-style: inherit;
     background-color: white;
     border: white solid;
     border-radius: 5px;
-    margin: 45px 20px;
+    margin: 45px 0px;
     width: 400px;
     padding: 30px;
 }
@@ -52,4 +57,11 @@ html {
 
 .form-container label,input,button{
     margin:8px
+}
+
+@media (max-width:1200px){
+    .modal-content {
+        margin-right:20px;
+        margin-left:20px
+    }
 }
