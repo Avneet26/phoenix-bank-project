@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    console.log("hello");
+    // console.log("hello");
     $(".hero-banner-container").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
