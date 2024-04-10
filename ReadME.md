@@ -25,5 +25,15 @@ Contribution:
 
     Sharnveer: Contact section HTML, AboutUS Page CSS
 
+    Feature #3- 
+
+    Avneet: Home page banner slider responsive
+
+    Uttkarsh: Smart Advice Page
+
+    Yamini: New to Canada Page
+
+    Sharnveer: New Account Page
+
 
     
