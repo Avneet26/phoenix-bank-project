@@ -7,9 +7,9 @@ const submitbtn = document.querySelector(".form-container .btn-submit");
 
 contactBtn.addEventListener("click", function () {
     popupBack.classList.remove("hidden-popup");
-    const nameVal = document.querySelector("#name").value = "";
-    const emailVal = document.querySelector("#email").value = "";
-    const queryVal = document.querySelector("#query").value = "";
+    document.querySelector("#name").value = "";
+    document.querySelector("#email").value = "";
+    document.querySelector("#query").value = "";
 });
 
 submitbtn.addEventListener("click", function () {
