@@ -34,7 +34,6 @@
                     <a href="#">Home</a>
                     <a href="#Services-section">Services</a>
                     <a href="./smart_advice.html">Smart Advice</a>
-                    <a href="#contact-content">Contact Us</a>
                     <a href="./about.html">About</a>
                 </section>
                 <button type="button" class="mobile-menu-button close">
@@ -45,7 +44,6 @@
                     <a href="#">Home</a>
                     <a href="#Services-section">Services</a>
                     <a href="./smart_advice.html">Smart Advice</a>
-                    <a href="#contact-content">Contact Us</a>
                     <a href="./about.html">About</a>
                     <section class="mobile-login-section header-login-container">
                         <a href="#">Login</a>
@@ -60,6 +58,40 @@
         </header>
 
         <main>
+            <div class="feedback-container">
+                <button id="contact-btn">Contact Us</button>
+                <div class="feedback-popup-background hidden-popup">
+                    <div class="feedback-popup-section">
+                        <div class="close-popup">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="popup-form-section">
+                            <h4>Let's Get in Touch</h4>
+                            <p>Fill out the form below and someone from our expert team will reach out to you in 24hrs</p>
+                            <form class="form-container"> 
+                                <label class="form-label" for="name"> Name:</label> 
+                                <input class="form-input" type="text" id="name" name="name">
+                                <p class="name-form-error error"></p>
+                                <label class="form-label" for="email"> Email:</label> 
+                                <input class="form-input" type="email" id="email" name="email">
+                                <p class="email-form-error error"></p> 
+                                <label class="form-label" for="query">Query:</label> 
+                                <textarea name="query" id="query" rows="5" style="resize: none"></textarea>
+                                <p class="query-form-error error"></p>
+                                <button class="btn-submit" type="button">Submit</button>
+                                <br>
+                            </form>
+                        </div>
+                        <div class="thanks-section hide-section">
+                            <h4>Thanks for getting in Touch</h4>
+                            <p>Your inquiry has been submitted and you will be contact by our expert in upto 24hrs.</p>
+                            <div class="tick-mark">
+                                <i class="fa-solid fa-check" style="width: 50px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <section class="hero-banner-container">
                 <div class="hero-banner-slide general-slide">
                     <div class="hero-content">
@@ -211,5 +243,6 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="scripts/slider.js"></script>
+        <script src="./scripts/popup.js"></script>
     </body>
 </html>

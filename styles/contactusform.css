@@ -55,7 +55,7 @@ html {
     cursor: pointer; 
     transition: background-color 0.3s ease, color 0.3s ease;
     color: white;
-    margin-left:73px
+    margin: 20px auto;
 } 
 .btn-submit:hover{
     color: #1581cd;
@@ -63,8 +63,9 @@ html {
     border:#1581cd solid 1px;
 }
 
-.form-container label,input,button{
-    margin:8px
+.form-container label,input{
+    margin:8px;
+    margin-left: 0;
 }
 
 @media (max-width:1200px){

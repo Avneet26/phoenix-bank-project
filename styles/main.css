@@ -70,8 +70,116 @@
     left: 10px !important;
     z-index: 9999;
 }
+p {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.feedback-container > button {
+    position: fixed;
+    top: 80vh;
+    right: -36px;
+    margin: 0;
+    transform: rotate(270deg);
+    z-index: 999;
+    padding: 10px 20px;
+    background: #51adee;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+.feedback-popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000066;
+    z-index: 99999;
+    padding: 0 20px;
+}
+.feedback-popup-section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.feedback-popup-section h4 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 500;
+}
+.feedback-popup-section p {
+    text-align: center;
+    max-width: 380px;
+    margin-top: 21px;
+}
+.popup-form-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.form-label {
+	display: block;
+	padding-bottom: 0;
+	margin-bottom: 0 !important;
+}
+#query {
+	margin-top: 10px;
+}
+#query, #email, #name {
+	width: 100%;
+}
+#email, #name{
+    height: 40px;
+}
+.form-container {
+	width: 100%;
+}
+.close-popup {
+	text-align: right;
+}
+.close-popup svg{
+    cursor: pointer;
+}
+.feedback-popup-background.hidden-popup{
+    display: none;
+}
+.hide-section{
+    display: none;
+}
+.fa-check{
+    width: 50px;
+  height: 40px;
+  color: green;
+}
+.tick-mark {
+	margin: 0 auto;
+	border: 4px solid green;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.error {
+    color: red;
+	margin-top: 0 !important;
+	text-align: left !important;
+	font-size: 12px;
+}
 @media (max-width: 1250px) {
-    .hero-content{
+    .hero-content {
         padding: 0 50px;
     }
 }
@@ -87,5 +195,11 @@
     }
     .hero-content {
         align-items: center;
+    }
+}
+@media (max-width: 440px) {
+    .feedback-popup-section {
+        max-width: 300px;
+        width: 100%;
     }
 }
