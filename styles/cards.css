@@ -1,0 +1,169 @@
+
+.cards_career_img{
+    max-width: 500px;
+}
+
+.cards_career_img img{
+    height: 100%;
+    width: 100%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.cards_career{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #1580cd6e;
+}
+
+.cards_career_text{
+    padding: 20px;
+}
+
+.cards_career_text p{
+    margin-bottom: 30px;
+}
+
+.cards_career_text a{
+    text-decoration: none;
+    color: #1581cd;
+}
+
+.cards_career_text a:hover{
+    text-decoration: underline;
+}
+
+.cards_career_text li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.cards_career_news_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.cards_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.cards_img{
+    max-width: 500px;
+}
+
+.cards_img img{
+    height: 100%;
+    width: 100%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.cards_div{
+    max-width: 373px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1580cd6e;
+}
+
+.cards_text{
+    padding: 20px;
+}
+
+.cards_text a{
+    text-decoration: none;
+    color: #1581cd;
+}
+
+.cards_text li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.cards_text h3{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.cards_flex{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#Aventura_card{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #1581cd;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#Aventura_card_3{
+    
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#card_content{
+    padding-bottom: 50px;
+}
+
+#card_content_last{
+    padding-bottom: 10px;
+}
+
+button{
+    padding: 10px;
+    background-color: #1581cd;
+    color: white;
+    border: #1581cd;
+    border-radius: 10px;
+}
+
+#card_button{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.cards_conent{
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.cards_conent p{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+main h3{
+font-weight: 500;
+font-size: 35px;
+margin-top: 35px;
+}
+
+@media (max-width:1120px){
+    .cards_flex{
+        flex-direction: column;
+    }
+    .cards_main_card{
+        max-width: 80%;
+    }
+}
