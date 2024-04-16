@@ -200,3 +200,17 @@ main{
     }
 }
 
+@media(max-width:1240px){
+    .smart_advice_inner_container{
+        padding: 20px;
+    }
+    .smart_advice_widgit_container{
+        padding: 20px;
+    }
+    .smart_advice_body_top{
+        padding: 0 20px;
+    }
+    .smart_advice_body{
+        padding: 0 20px;
+    }
+}

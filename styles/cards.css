@@ -1,3 +1,35 @@
+.cards_banner{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),url(../assets/cards_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+}
+
+.cards_inner_container{
+    max-width: 480px;
+    height: 220px;
+    padding: 40px 0;
+    color: white;
+    user-select: none;
+}
+
+.cards_first_content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1200px;
+}
+
+.cards_inner_container h2{
+    font-size: 50px;
+}
 
 .cards_career_img{
     max-width: 500px;
@@ -165,5 +197,41 @@ margin-top: 35px;
     }
     .cards_main_card{
         max-width: 80%;
+    }
+    .cards_img img{
+        margin-right: 0%;
+    }
+    .cards_career{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1140px){
+    main h3{
+        padding: 0 20px;
+    }
+    .cards_conent{
+        padding: 0 20px;
+    }
+    /* .cards_career_news_section{
+        max-width: 373px;
+        width: 100%;
+        display: flex;
+    flex-direction: column;
+    } */
+    .cards_inner_container{
+        padding: 0 20px;
+    }
+    .cards_career{
+        max-width: 373px;
+        width: 100%;
+        display: flex;
+    flex-direction: column;
+    }
+}
+
+@media (max-width:425px){
+    .cards_main_section{
+        padding: 20px;
     }
 }
