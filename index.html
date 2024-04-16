@@ -27,12 +27,26 @@
         <header class="main-header">
             <div class="header-container">
                 <section class="header-logo-container">
-                    <img src="./assets/whitelogo.png" alt="brand logo">
-                    <h1>Phoenix Imperial Bank</h1>
+                    <a href="./index.html">
+                        <img src="./assets/whitelogo.png" alt="brand logo">
+                        <h1>Phoenix Imperial Bank</h1>
+                    </a>
                 </section>
                 <section class="header-nav-container">
-                    <a href="#">Home</a>
-                    <a href="#Services-section">Services</a>
+                    <!-- <a href="./index.html">Home</a> -->
+                    <div class="services-dropdown-nav closed">
+                        <div>
+                            Services
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="services-dropdown">
+                            <a href="./cards.html">Credit Cards</a>
+                            <a href="./new_to_canada.html">New To Canada</a>
+                            <a href="">Banking To Students</a>
+                            <a href="./newacc.html">New Account</a>
+                            <a href="">Investments</a>
+                        </div>
+                    </div>
                     <a href="./smart_advice.html">Smart Advice</a>
                     <a href="./about.html">About</a>
                 </section>
@@ -41,8 +55,12 @@
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <section class="mobile-nav-container close">
-                    <a href="#">Home</a>
-                    <a href="#Services-section">Services</a>
+                    <a href="./index.html">Home</a>
+                    <a href="./cards.html">Credit Cards</a>
+                    <a href="./new_to_canada.html">New To Canada</a>
+                    <a href="">Banking To Students</a>
+                    <a href="./newacc.html">New Account</a>
+                    <a href="">Investments</a>
                     <a href="./smart_advice.html">Smart Advice</a>
                     <a href="./about.html">About</a>
                     <section class="mobile-login-section header-login-container">
@@ -56,7 +74,6 @@
                 </section>
             </div>
         </header>
-
         <main>
             <div class="feedback-container">
                 <button id="contact-btn">Contact Us</button>
@@ -186,17 +203,20 @@
             <div class="modal-content">
                 <h3>Contact us</h3>
                 <h2>Have banking questions?</h2>
-                <p>Get automated answers to most common banking questions.</p>
-                <form class="form-container"> 
-                    <label class="form-label" for="name"> Name:</label> 
-                    <input class="form-input" type="text" id="name" name="name" required> 
-                    <br>
-                    <label class="form-label" for="query">Query:</label> 
-                    <input class="form-input" type="text" id="query" name="query" required> 
-                    <br>
-                    <button class="btn-submit" type="submit">Submit</button>
-                    <br>
-                </form>
+                <div class="contact-option-container">
+                    <div class="contact-option">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>enquiries@phoeniximperial.com</p>
+                    </div>
+                    <div class="contact-option">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>1-800-465-2422</p>
+                    </div>
+                    <div class="contact-option">
+                        <i class="fa-solid fa-note-sticky"></i>
+                        <p>Open Contact Form</p>
+                    </div>
+                </div>
                 <p>Sign onto online banking for more personalized help.</p>
             </div>
             </div>
