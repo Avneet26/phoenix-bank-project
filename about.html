@@ -19,30 +19,47 @@
         <link rel="stylesheet" href="./styles/footer.css"/>
         <link rel="stylesheet" href="./styles/widget_nav.css"/>
         <link rel="stylesheet" href="./styles/header.css"/>
+        <link rel="stylesheet" href="./styles/contactusform.css">
     </head>
     <body>
         <header class="main-header">
             <div class="header-container">
                 <section class="header-logo-container">
-                    <img src="./assets/whitelogo.png" alt="brand logo">
-                    <h1>Phoenix Imperial Bank</h1>
+                    <a href="./index.html">
+                        <img src="./assets/whitelogo.png" alt="brand logo">
+                        <h1>Phoenix Imperial Bank</h1>
+                    </a>
                 </section>
                 <section class="header-nav-container">
-                    <a href="./index.html">Home</a>
-                    <a href="./index.html#Services-section">Services</a>
+                    <!-- <a href="./index.html">Home</a> -->
+                    <div class="services-dropdown-nav closed">
+                        <div>
+                            Services
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="services-dropdown">
+                            <a href="./cards.html">Credit Cards</a>
+                            <a href="./new_to_canada.html">New To Canada</a>
+                            <a href="">Banking To Students</a>
+                            <a href="./newacc.html">New Account</a>
+                            <a href="">Investments</a>
+                        </div>
+                    </div>
                     <a href="./smart_advice.html">Smart Advice</a>
-                    <a href="./index.html#contact-content">Contact Us</a>
-                    <a href="#">About</a>
+                    <a href="./about.html">About</a>
                 </section>
                 <button type="button" class="mobile-menu-button close">
                     <i class="fa-solid fa-xmark"></i>
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <section class="mobile-nav-container close">
-                    <a href="#">Home</a>
-                    <a href="#Services-section">Services</a>
+                    <a href="./index.html">Home</a>
+                    <a href="./cards.html">Credit Cards</a>
+                    <a href="./new_to_canada.html">New To Canada</a>
+                    <a href="">Banking To Students</a>
+                    <a href="./newacc.html">New Account</a>
+                    <a href="">Investments</a>
                     <a href="./smart_advice.html">Smart Advice</a>
-                    <a href="#">Contact Us</a>
                     <a href="./about.html">About</a>
                     <section class="mobile-login-section header-login-container">
                         <a href="#">Login</a>
@@ -57,6 +74,40 @@
         </header>
 
         <main>
+            <div class="feedback-container">
+                <button id="contact-btn">Contact Us</button>
+                <div class="feedback-popup-background hidden-popup">
+                    <div class="feedback-popup-section">
+                        <div class="close-popup">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="popup-form-section">
+                            <h4>Let's Get in Touch</h4>
+                            <p>Fill out the form below and someone from our expert team will reach out to you in 24hrs</p>
+                            <form class="form-container"> 
+                                <label class="form-label" for="name"> Name:</label> 
+                                <input class="form-input" type="text" id="name" name="name">
+                                <p class="name-form-error error"></p>
+                                <label class="form-label" for="email"> Email:</label> 
+                                <input class="form-input" type="email" id="email" name="email">
+                                <p class="email-form-error error"></p> 
+                                <label class="form-label" for="query">Query:</label> 
+                                <textarea name="query" id="query" rows="5" style="resize: none"></textarea>
+                                <p class="query-form-error error"></p>
+                                <button class="btn-submit" type="button">Submit</button>
+                                <br>
+                            </form>
+                        </div>
+                        <div class="thanks-section hide-section">
+                            <h4>Thanks for getting in Touch</h4>
+                            <p>Your inquiry has been submitted and you will be contact by our expert in upto 24hrs.</p>
+                            <div class="tick-mark">
+                                <i class="fa-solid fa-check" style="width: 50px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="about_banner">
                 <section class="about_first_content">
                 <div class="about_inner_container">
@@ -138,5 +189,6 @@
             </div>
         </footer>
         <script src="scripts/mobileNav.js"></script>
+        <script src="./scripts/popup.js"></script>
     </body>
 </html>

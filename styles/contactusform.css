@@ -68,6 +68,29 @@ html {
     margin-left: 0;
 }
 
+.contact-option p {
+	line-height: 1;
+	margin: 10px 0 12px 20px;
+}
+
+.contact-option-container {
+	margin-top: 20px;
+}
+
+.contact-option:nth-child(3) p:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.contact-option path {
+	fill: #51adee;
+}
+
+.contact-option {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
 @media (max-width:1200px){
     .modal-content {
         margin-right:20px;
