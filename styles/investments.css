@@ -1,3 +1,4 @@
+
 .bg-gray {
     background-color: rgb(238, 238, 238);
     width: 100%;
@@ -6,4 +7,11 @@
 
 .hero, #Online-Banking {
     background-image: initial;
+}
+
+.new_account {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../assets/alexander-mils-lCPhGxs7pww-unsplash.jpg) !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
 }

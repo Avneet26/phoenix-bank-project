@@ -178,3 +178,15 @@ div#main-container-2 > div h3 ~ p{
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+
+  @media screen and (max-width:799px) {
+    #main-container-2 {
+        flex-direction: column;
+    }
+    #special-offer-container p {
+        margin-bottom: 0;
+    }
+    #special-offer-div {
+        height: auto;
+    }
+}

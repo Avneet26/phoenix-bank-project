@@ -244,6 +244,4 @@ section.accordion {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
-  @media screen and (max-width:1200px) {
-    
-}
+ 
