@@ -139,20 +139,45 @@ div#main-container-2 > div > svg {
     width: 800px;
     margin:20px;
     border-radius: 10px;
+    
 }
-#special-container{
-    display: flex;
-    justify-content: center;
+.special-container{
+    /* display: flex;
     height: 300px;
     width: 60%;
-    border-radius: 10px;
-    background: linear-gradient(
-        rgba(0,0,0,0.3),
-        rgba(0,0,0,0.3)
-    ),url(../assets/college-friends.jpg);
+    border-radius: 10px; */
+    display: flex;
+    justify-content: space-between;
+    
     background-size: cover;
     /* background-repeat: repeat; */
     background-position-y: 40%;
+}
+.Student-offers img{
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    );
+    height: 300px;
+    border-radius: 10px;
+}
+
+.special-info{
+    background-color: white;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#special-text{
+    padding:5px;
+    align-self: center;
+}
+#text-info{
+/* h2 p*/
 }
 .info_container{
     border: 0.5px solid rgb(164, 163, 163);
