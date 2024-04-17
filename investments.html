@@ -43,39 +43,55 @@
   <body>
     <header class="main-header">
       <div class="header-container">
-        <section class="header-logo-container">
-          <img src="./assets/whitelogo.png" alt="brand logo" />
-          <h1>Phoenix Imperial Bank</h1>
-        </section>
-        <section class="header-nav-container">
-          <a href="index.html">Home</a>
-          <a href="#Services-section">Services</a>
-          <a href="#">Smart Advice</a>
-          <a href="#contact-content">Contact Us</a>
-          <a href="./about.html">About</a>
-        </section>
-        <button type="button" class="mobile-menu-button close">
-          <i class="fa-solid fa-xmark"></i>
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <section class="mobile-nav-container close">
-          <a href="#">Home</a>
-          <a href="#Services-section">Services</a>
-          <a href="#">Smart Advice</a>
-          <a href="#contact-content">Contact Us</a>
-          <a href="#">About</a>
-          <section class="mobile-login-section header-login-container">
-            <a href="#">Login</a>
-            <a href="#">SignUp</a>
+          <section class="header-logo-container">
+              <a href="./index.html">
+                  <img src="./assets/whitelogo.png" alt="brand logo">
+                  <h1>Phoenix Imperial Bank</h1>
+              </a>
           </section>
-        </section>
-        <section class="header-login-container">
-          <a href="#">Login</a>
-          <a href="#">SignUp</a>
-        </section>
+          <section class="header-nav-container">
+              <!-- <a href="./index.html">Home</a> -->
+              <div class="services-dropdown-nav closed">
+                  <div>
+                      Services
+                      <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                  <div class="services-dropdown">
+                      <a href="./cards.html">Credit Cards</a>
+                      <a href="./new_to_canada.html">New To Canada</a>
+                      <a href="">Banking To Students</a>
+                      <a href="./newacc.html">New Account</a>
+                      <a href="">Investments</a>
+                  </div>
+              </div>
+              <a href="./smart_advice.html">Smart Advice</a>
+              <a href="./about.html">About</a>
+          </section>
+          <button type="button" class="mobile-menu-button close">
+              <i class="fa-solid fa-xmark"></i>
+              <i class="fa-solid fa-bars"></i>
+          </button>
+          <section class="mobile-nav-container close">
+              <a href="./index.html">Home</a>
+              <a href="./cards.html">Credit Cards</a>
+              <a href="./new_to_canada.html">New To Canada</a>
+              <a href="">Banking To Students</a>
+              <a href="./newacc.html">New Account</a>
+              <a href="">Investments</a>
+              <a href="./smart_advice.html">Smart Advice</a>
+              <a href="./about.html">About</a>
+              <section class="mobile-login-section header-login-container">
+                  <a href="#">Login</a>
+                  <a href="#">SignUp</a>
+              </section>
+          </section>
+          <section class="header-login-container">
+              <a href="#">Login</a>
+              <a href="#">SignUp</a>
+          </section>
       </div>
-    </header>
-    <div class="about_banner new_account">
+  </header>
+<div class="about_banner new_account">
       <section class="about_first_content">
         <div class="about_inner_container">
           <h2>Investments</h2>
