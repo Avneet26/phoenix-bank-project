@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>New to Canada</title>
-        <link rel="icon" type="image/x-icon" href="./assets/whitelogo.png">
         <!-- Google fonts cdn --->
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -22,34 +21,20 @@
         <link rel="stylesheet" href="./styles/footer.css"/>
         <link rel="stylesheet" href="./styles/widget_nav.css"/>
         <link rel="stylesheet" href="./styles/header.css"/>
-        <link rel="stylesheet" href="./styles/newToCanada.css">
-        <link rel="stylesheet" href="./styles/contactusform.css">
+        <link rel="stylesheet" href="./styles/bankingToStudents.css">
     </head>
     <body>
         <header class="main-header">
             <div class="header-container">
                 <section class="header-logo-container">
-                    <a href="./index.html">
-                        <img src="./assets/whitelogo.png" alt="brand logo">
-                        <h1>Phoenix Imperial Bank</h1>
-                    </a>
+                    <img src="./assets/whitelogo.png" alt="brand logo">
+                    <h1>Phoenix Imperial Bank</h1>
                 </section>
                 <section class="header-nav-container">
-                    <!-- <a href="./index.html">Home</a> -->
-                    <div class="services-dropdown-nav closed">
-                        <div>
-                            Services
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <div class="services-dropdown">
-                            <a href="./cards.html">Credit Cards</a>
-                            <a href="./new_to_canada.html">New To Canada</a>
-                            <a href="">Banking To Students</a>
-                            <a href="./newacc.html">New Account</a>
-                            <a href="">Investments</a>
-                        </div>
-                    </div>
+                    <a href="./index.html">Home</a>
+                    <a href="./index.html #Services-section">Services</a>
                     <a href="./smart_advice.html">Smart Advice</a>
+                    <a href="#contact-content">Contact Us</a>
                     <a href="./about.html">About</a>
                 </section>
                 <button type="button" class="mobile-menu-button close">
@@ -57,13 +42,10 @@
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <section class="mobile-nav-container close">
-                    <a href="./index.html">Home</a>
-                    <a href="./cards.html">Credit Cards</a>
-                    <a href="./new_to_canada.html">New To Canada</a>
-                    <a href="">Banking To Students</a>
-                    <a href="./newacc.html">New Account</a>
-                    <a href="">Investments</a>
+                    <a href="#">Home</a>
+                    <a href="#Services-section">Services</a>
                     <a href="./smart_advice.html">Smart Advice</a>
+                    <a href="#contact-content">Contact Us</a>
                     <a href="./about.html">About</a>
                     <section class="mobile-login-section header-login-container">
                         <a href="#">Login</a>
@@ -78,104 +60,106 @@
         </header>
         
         
-        <div id="newcomers" class="newcomer-banner">
-            <div class="content-wrapper">
+        <div id="studentBanking" class="student-banner">
+            <div class="student-content-wrapper">
                 <div class="modal-content">
-                    <h1>
-                        <span class="heading-1">
-                        New to Canada? Get our best in digital banking.
+                    <h3>
+                        <span class="heading-3">
+                        Student Banking
                         </span>
-                    </h1>
+                    </h3>
+                    <h2>
+                        <span class="heading-2">
+                        Your campus journey starts here.
+                        </span>
+                    </h2>
                     <p>
-                        <span class="modal-content-p">
-                        Whether you're newly arrived or already settled in, let us help make Canada feel like home with banking solutions to make life easier.
-                        </span>
+                        <span class="OfferStatement">We're here to help with your new start. Earn $200+ or
+                            more when you open a chequing account, get a credit card
+                            and refer student friends.</span>
                     </p>
+                    <div class="StudentButtons">
+                    <a href="#"> Open an Account</a>
+                    <a href="#"> Get a credit card</a>
+                </div>
                 </div>
             </div>
         </div>
         <main class="Main">
-            <div class="feedback-container">
-                <button id="contact-btn">Contact Us</button>
-                <div class="feedback-popup-background hidden-popup">
-                    <div class="feedback-popup-section">
-                        <div class="close-popup">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="popup-form-section">
-                            <h4>Let's Get in Touch</h4>
-                            <p>Fill out the form below and someone from our expert team will reach out to you in 24hrs</p>
-                            <form class="form-container"> 
-                                <label class="form-label" for="name"> Name:</label> 
-                                <input class="form-input" type="text" id="name" name="name">
-                                <p class="name-form-error error"></p>
-                                <label class="form-label" for="email"> Email:</label> 
-                                <input class="form-input" type="email" id="email" name="email">
-                                <p class="email-form-error error"></p> 
-                                <label class="form-label" for="query">Query:</label> 
-                                <textarea name="query" id="query" rows="5" style="resize: none"></textarea>
-                                <p class="query-form-error error"></p>
-                                <button class="btn-submit" type="button">Submit</button>
-                                <br>
-                            </form>
-                        </div>
-                        <div class="thanks-section hide-section">
-                            <h4>Thanks for getting in Touch</h4>
-                            <p>Your inquiry has been submitted and you will be contact by our expert in upto 24hrs.</p>
-                            <div class="tick-mark">
-                                <i class="fa-solid fa-check" style="width: 50px;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="special-offer-div">
-                <div id="special-offer-container">
-                    <p>
-                        <span id="special-offer-image">
-                            <img src="./assets/specialDiscount.svg" alt="Special Discount">
-                        </span>
-                        <span class="text-container">
-                            Refer a newcomer to Phoenix Imperial Bank and you can both earn $50.
-                        </span>
-                        <span class="link">
-                        <a href="/en/special-offers/refer-a-friend-new-to-canada.html" target="_self" 
-                        id="buttonid">Learn more about this offer</a>
-                        </span>
-                    </p>
-                </div>
-            </div>
             <div class="main-container">
                 <div>
-                    <h2>
-                        Why newcomers love Phoenix Imperial Bank
-                    </h2>
+                    <h1>
+                        Where are you in your student journey?
+                    </h1>
+                    <p>
+                        No matter where you are in your schooling, we have the tools to help you excel.
+                    </p>
                 </div>
+
                 <div id="main-container-2">
-                    <div class="maple-leaf">
-                        <i class="fa-brands fa-canadian-maple-leaf"></i>
-                        <h3>You can find us in your community</h3>
-                        <br>
-                        <p>Bank anywhere with our mobile app or access our one of our many banking centres and ATMs conveniently located across Canada.</p>
+                    <div class="high-school">
+                        <i class="fa-solid fa-book" style="color: #51adee;"></i>
+                        <div class="Icon-links">
+                            <a href="#" target="_self">High School Students</a>
+                        </div>
                     </div>
-                    <div class="credit">
-                        <i class="fa-regular fa-credit-card"></i>
-                        <h3>Collect rewards while building your credit</h3>
-                        <br>
-                        <p>Earn cash back with credit card purchases. You don't need to provide an income or credit history, or a security deposit.</p>
+                    <div class="post-secondary">
+                        <i class="fa-solid fa-certificate" style="color: #51adee;"></i>
+                        <div class="Icon-links">
+                            <a href="#" target="_self">Post-secondary Students</a>
+                        </div>
+                    </div>
+                    <div class="post-grduate">
+                        <i class="fa-solid fa-graduation-cap" style="color: #51adee;"></i>
+                        <div class="Icon-links">
+                            <a href="#" target="_self">Post-graduate Students</a>
+                        </div>
+                    </div>
+                    <div class="post-grduate">
+                        <i class="fa-solid fa-user-tie" style="color: #51adee;"></i>
+                        <div class="Icon-links">
+                            <a href="#" target="_self">Professional Students</a>
+                        </div>
                     </div>
                     <div class="mobile">
-                        <i class="fa-solid fa-mobile"></i>
-                        <h3>Award-winning banking, right from your phone</h3>
-                        <br>
-                        <p>Send money back home with no fees1, get account updates in real time and tap to pay for purchases, all from your mobile device.</p>
+                        <i class="fa-solid fa-globe" style="color: #51adee;"></i>
+                        <div class="Icon-links">
+                            <a href="#" target="_self">Professional Students</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="horizontal-line">
-                <div></div>
+            <!-- <div class="Student-offers">
+                <div class="special-container">
+                    <div class="image">
+                </div>
+                <div class="special-info">
+                    <h3 id="special-text">Special Offer</h3>
+                    <div id="text-info">
+                        <h2>Refer a friend and you’ll both earn $50</h2>
+                        <p>Earn up to $500 for 10 successful referrals each year, when you refer a student friend to join Phoenix Imperial Bank.</p>
+                    </div>
+                </div>
             </div>
-            <div id="accordian">
+            </div> -->
+            <section class="Student-offers">
+                <div class="special-container">
+                    <div class="image">
+                        <img src="./assets/college-friends.jpg" alt="college friends image">
+                    </div>
+                    <div class="special-info">
+                    <h3 id="special-text">Special Offer</h3>
+                    <div id="text-info">
+                        <h2>Refer a friend and you’ll both earn $50</h2>
+                        <p>Earn up to $500 for 10 successful referrals each year, when you refer a student friend to join Phoenix Imperial Bank.</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="horizontal-line">
+                <div></div>
+            </section>
+            <section class="accordian">
                 <div id="accordian-head">
                     <h2>Related FAQs</h2>
                 </div>
@@ -199,7 +183,7 @@
                     <div class="accordion-body">To set up direct deposit for your paycheck, contact your employer's HR department and provide them with your account and routing numbers.</div>
                 </div>
 
-            </div>
+            </section>
             
         </main>
         
@@ -241,26 +225,6 @@
             </div>
         </footer>
         <script src="scripts/mobileNav.js"></script>
-<<<<<<< Updated upstream
-        <script src="./scripts/popup.js"></script>
-
-=======
-        <script>
-            var acc = document.getElementsByClassName("accordion-header");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-                } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-            }
-            </script>
->>>>>>> Stashed changes
+        <script src="scripts/accordianClick.js"></script>
     </body>
 </html>
