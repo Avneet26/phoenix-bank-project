@@ -140,17 +140,13 @@ div#main-container-2 > div > svg {
     max-width: 800px;
 }
 .special-container {
-    /* display: flex;
-    height: 300px;
-    width: 60%;
-    border-radius: 10px; */
-    display: flex;
-    justify-content: space-between;
-    border: 0.5px solid rgb(164, 163, 163);
-
-    background-size: cover;
-    /* background-repeat: repeat; */
-    background-position-y: 40%;
+	display: flex;
+	justify-content: space-between;
+	border: 0.5px solid rgb(164, 163, 163);
+	background-size: cover;
+	background-position-y: 40%;
+	background-color: white;
+	border-radius: 10px;
 }
 .Student-offers img {
     max-width: 400px;
@@ -158,12 +154,12 @@ div#main-container-2 > div > svg {
     height: 300px;
     background-repeat: no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    height: 300px;
-    border-radius: 10px;
+    height: 100%;
+    border-radius: 10px 0px 0 10px;
 }
 
 .special-info {
-    background-color: white;
+    /* background-color: white; */
     padding-left: 20px;
     display: flex;
     flex-direction: column;
@@ -204,5 +200,9 @@ div#main-container-2 > div > svg {
     }
     .Student-offers {
         justify-content: center;
+    }
+    .Student-offers img {
+        max-width: 100%;
+        border-radius: 10px 10px 0 0;
     }
 }
