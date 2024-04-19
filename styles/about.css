@@ -76,6 +76,7 @@ main{
     display: flex;
     flex-direction: row;
     border: 1px solid #1580cd6e;
+    margin: 0 10px;
 }
 
 .about_career_text{
@@ -113,7 +114,10 @@ main{
     margin-bottom: 50px;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:800px) {
+    .about_career_img {
+        max-width: 100%;
+    }
     .about_history_content{
         padding: 20px;
     }
