@@ -79,13 +79,13 @@ p {
 .feedback-container > button {
     position: fixed;
     top: 80vh;
-    right: -36px;
+    right: -40px;
     margin: 0;
+    border: 1px solid white;
     transform: rotate(270deg);
     z-index: 999;
     padding: 10px 20px;
     background: #51adee;
-    border: none;
     outline: none;
     color: white;
     border-radius: 5px 5px 0 0;
@@ -177,6 +177,21 @@ p {
 	margin-top: 0 !important;
 	text-align: left !important;
 	font-size: 12px;
+}
+.btn-submit { 
+    background-color: #51adee;
+    padding: 8px 16px; 
+    border: 1px solid; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
+    margin: 20px auto;
+} 
+.btn-submit:hover{
+    color: #1581cd;
+    background-color: white;
+    border:#1581cd solid 1px;
 }
 @media (max-width: 1250px) {
     .hero-content {
