@@ -1,11 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Phoenix bank</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Phoenix Imperial Bank</title>
+        <link rel="icon" type="image/x-icon" href="./assets/whitelogo.png">
+        <!-- Google fonts cdn --->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+        <!-- Font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Slick Slider css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Custom css links -->
+        <link rel="stylesheet" href="./styles/normalize.css"/>
+        <link rel="stylesheet" href="./styles/main.css"/>
+        <link rel="stylesheet" href="./styles/footer.css"/>
+        <link rel="stylesheet" href="./styles/widget_nav.css"/>
+        <link rel="stylesheet" href="./styles/header.css"/>
+        <link rel="stylesheet" href="./styles/contactusform.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="header-container">
+                <section class="header-logo-container">
+                    <a href="./index.html">
+                        <img src="./assets/whitelogo.png" alt="brand logo">
+                        <h1>Phoenix Imperial Bank</h1>
+                    </a>
+                </section>
+                <section class="header-nav-container">
+                    <!-- <a href="./index.html">Home</a> -->
+                    <div class="services-dropdown-nav closed">
+                        <div>
+                            Services
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="services-dropdown">
+                            <a href="./cards.html">Credit Cards</a>
+                            <a href="./new_to_canada.html">New To Canada</a>
+                            <a href="./bankingToStudents.html">Banking To Students</a>
+                            <a href="./newacc.html">New Account</a>
+                            <a href="./investments.html">Investments</a>
+                        </div>
+                    </div>
+                    <a href="./smart_advice.html">Smart Advice</a>
+                    <a href="./about.html">About</a>
+                </section>
+                <button type="button" class="mobile-menu-button close">
+                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <section class="mobile-nav-container close">
+                    <a href="./index.html">Home</a>
+                    <a href="./cards.html">Credit Cards</a>
+                    <a href="./new_to_canada.html">New To Canada</a>
+                    <a href="./bankingToStudents.html">Banking To Students</a>
+                    <a href="./newacc.html">New Account</a>
+                    <a href="./investments.html">Investments</a>
+                    <a href="./smart_advice.html">Smart Advice</a>
+                    <a href="./about.html">About</a>
+                    <section class="mobile-login-section header-login-container">
+                        <a href="#">Login</a>
+                        <a href="#">SignUp</a>
+                    </section>
+                </section>
+                <section class="header-login-container">
+                    <a href="#">Login</a>
+                    <a href="#">SignUp</a>
+                </section>
+            </div>
+        </header>
+        <main>
+            <div class="feedback-container">
+                <button id="contact-btn">Contact Us</button>
+                <div class="feedback-popup-background hidden-popup">
+                    <div class="feedback-popup-section">
+                        <div class="close-popup">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="popup-form-section">
+                            <h4>Let's Get in Touch</h4>
+                            <p>Fill out the form below and someone from our expert team will reach out to you in 24hrs</p>
+                            <form class="form-container"> 
+                                <label class="form-label" for="name"> Name:</label> 
+                                <input class="form-input" type="text" id="name" name="name">
+                                <p class="name-form-error error"></p>
+                                <label class="form-label" for="email"> Email:</label> 
+                                <input class="form-input" type="email" id="email" name="email">
+                                <p class="email-form-error error"></p> 
+                                <label class="form-label" for="query">Query:</label> 
+                                <textarea name="query" id="query" rows="5" style="resize: none"></textarea>
+                                <p class="query-form-error error"></p>
+                                <button class="btn-submit" type="button">Submit</button>
+                                <br>
+                            </form>
+                        </div>
+                        <div class="thanks-section hide-section">
+                            <h4>Thanks for getting in Touch</h4>
+                            <p>Your inquiry has been submitted and you will be contact by our expert in upto 24hrs.</p>
+                            <div class="tick-mark">
+                                <i class="fa-solid fa-check" style="width: 50px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="hero-banner-container">
+                <div class="hero-banner-slide general-slide">
+                    <div class="hero-content">
+                        <h3>Elevate Your Banking Experience with Phoenix Imperial Bank</h3>
+                        <p>Experience tailored banking solutions at Phoenix Imperial Bank. Whether saving, investing, or banking, our commitment to excellence ensures every need is met with care and innovation. Join us for a journey of financial prosperity.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-banner-slide card-slide">
+                    <div class="hero-content">
+                        <h3>Unlock Rewards and Convenience with Phoenix Imperial Bank Credit Cards</h3>
+                        <p>Maximize rewards and convenience with Phoenix Imperial Bank credit cards. From cashback to exclusive perks, our options cater to your lifestyle. With advanced security and 24/7 support, manage expenses confidently. Apply now and elevate your spending.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-banner-slide student-slide">
+                    <div class="hero-content">
+                        <h3>Welcome International Students to Phoenix Imperial Bank</h3>
+                        <p>Start your academic journey with Phoenix Imperial Bank's support. Tailored services ease your transition, from opening accounts to digital banking tools. Join us for a hassle-free experience abroad.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </section>
+            <section id="Services-section" class="widgit_heading_container">
+                <h2>Your Financial Journey Begins Here</h2>
+                <p>
+                    At Phoenix Imperial Bank, we're more than just a financial
+                    institution; we're your trusted partner in achieving your
+                    financial goals. With a commitment to excellence,
+                    innovation, and personalized service, we strive to empower
+                    you to make the most of your money and realize your dreams.
+                    Join us on the journey to financial success today.
+                </p>
+            </section>
+            <div class="widgit_container">
+                <a href="cards.html" class="widgit_nav">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <h3 class="remove_underline">Cards</h3>
+                    <p class="widget_nav_content">
+                        Get the rewards and benefits you want with the right
+                        credit card. We'll help you find it.
+                    </p>
+                </a>
+                <a href="./new_to_canada.html" class="widgit_nav">
+                    <i class="fa-solid fa-passport"></i>
+                    <h3 class="remove_underline">New to Canada</h3>
+                    <p class="widget_nav_content">
+                        If you’re new to Canada, we’ll help you get started with
+                        a bank account, credit card and resources to manage your
+                        money with confidence.
+                    </p>
+                </a>
+                <a href="bankingToStudents.html" class="widgit_nav">
+                    <i class="fa-solid fa-school"></i>
+                    <h3 class="remove_underline">Banking to Students</h3>
+                    <p class="widget_nav_content">
+                        We're here to help with your new start. Earn $200+ or
+                        more when you open a chequing account, get a credit card
+                        and refer student friends.
+                    </p>
+                </a>
+                <a href="newacc.html" class="widgit_nav">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h3 class="remove_underline">New Account</h3>
+                    <p class="widget_nav_content">
+                        That’s our specialty. We can help you get closer to your
+                        goals, every day.
+                    </p>
+                </a>
+                <a href="/investments.html" class="widgit_nav">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <h3 class="remove_underline">Investments</h3>
+                    <p class="widget_nav_content">
+                        From wealth planning to retirement, we’ll help you
+                        prepare for financial success with our professional
+                        advice and insightful tools.
+                    </p>
+                </a>
+                <a href="smart_advice.html" class="widgit_nav">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <h3 class="remove_underline">Smart Advice</h3>
+                    <p class="widget_nav_content">
+                        Looking for advice? Trust our experienced team to
+                        provide tailored solutions with care and expertise. Your
+                        success is our priority.
+                    </p>
+                </a>
+            </div>
+        </main>
+        <div id="contact-content" class="contactus-banner">
+            <div class="content-wrapper">
+            <div class="modal-content">
+                <h3>Contact us</h3>
+                <h2>Have banking questions?</h2>
+                <div class="contact-option-container">
+                    <div class="contact-option">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>enquiries@phoeniximperial.com</p>
+                    </div>
+                    <div class="contact-option">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>1-800-465-2422</p>
+                    </div>
+                    <div class="contact-option">
+                        <i class="fa-solid fa-note-sticky"></i>
+                        <p>Open Contact Form</p>
+                    </div>
+                </div>
+                <p>Sign onto online banking for more personalized help.</p>
+            </div>
+            </div>
+        </div>
+        <footer class="footer-container temp-container">
+            <div class="logo-top-branding-container">
+                <div class="logo-logo-container">
+                    <img class="brand-logo-sml" src="./assets/whitelogo.png" alt="brand-logo"/>
+                    <h2 class="footer-brand-heading">Phoenix Imperial Bank</h2>
+                </div>
+                <div class="footer-social-link-container">
+                    <ul>
+                        <li>
+                            <a href="#" class="footer-social-link">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-social-link">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-social-link">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-social-link">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copy-section">
+                <p class="footer-copy-text">
+                    &copy; FinTech Coders 2024
+                </p>
+            </div>
+        </footer>
+        <script src="scripts/mobileNav.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="scripts/slider.js"></script>
+        <script src="./scripts/popup.js"></script>
+        <script src="scripts/accordianClick.js"></script>
+    </body>
 </html>

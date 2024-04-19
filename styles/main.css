@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.brand-logo-sml {
+    width: 70px;
+    margin-right: 15px;
+}
+.temp-container {
+    padding: 0 60px;
+}
+.hero-banner-container {
+    width: 100vw;
+}
+.hero-banner-slide {
+    height: 550px;
+    background-position: center !important;
+    background-size: cover !important;
+    color: white;
+}
+.hero-banner-slide.general-slide {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/World\ Map.svg);
+}
+.hero-banner-slide.card-slide {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/nathana-reboucas-3YSDTzqnVtQ-unsplash.jpg);
+}
+.hero-banner-slide.student-slide {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/annie-spratt-QckxruozjRg-unsplash.jpg);
+}
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-content h3 {
+    font-weight: 700;
+    font-size: 29px;
+    width: 460px;
+    margin-bottom: 10px;
+}
+.hero-content p {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+.hero-content a {
+    background-color: #51adee;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 16px;
+    border: 2px solid #51adee;
+    transition: all 200ms ease;
+    text-decoration: none;
+}
+.slick-next {
+    right: 10px !important;
+}
+.slick-prev {
+    left: 10px !important;
+    z-index: 9999;
+}
+p {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.feedback-container > button {
+    position: fixed;
+    top: 80vh;
+    right: -40px;
+    margin: 0;
+    border: 1px solid white;
+    transform: rotate(270deg);
+    z-index: 999;
+    padding: 10px 20px;
+    background: #51adee;
+    outline: none;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+.feedback-popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000066;
+    z-index: 99999;
+    padding: 0 20px;
+}
+.feedback-popup-section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.feedback-popup-section h4 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 500;
+}
+.feedback-popup-section p {
+    text-align: center;
+    max-width: 380px;
+    margin-top: 21px;
+}
+.popup-form-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.form-label {
+	display: block;
+	padding-bottom: 0;
+	margin-bottom: 0 !important;
+}
+#query {
+	margin-top: 10px;
+}
+#query, #email, #name {
+	width: 100%;
+}
+#email, #name{
+    height: 40px;
+}
+.form-container {
+	width: 100%;
+}
+.close-popup {
+	text-align: right;
+}
+.close-popup svg{
+    cursor: pointer;
+}
+.feedback-popup-background.hidden-popup{
+    display: none;
+}
+.hide-section{
+    display: none;
+}
+.fa-check{
+    width: 50px;
+  height: 40px;
+  color: green;
+}
+.tick-mark {
+	margin: 0 auto;
+	border: 4px solid green;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.error {
+    color: red;
+	margin-top: 0 !important;
+	text-align: left !important;
+	font-size: 12px;
+}
+.btn-submit { 
+    background-color: #51adee;
+    padding: 8px 16px; 
+    border: 1px solid; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
+    margin: 20px auto;
+} 
+.btn-submit:hover{
+    color: #1581cd;
+    background-color: white;
+    border:#1581cd solid 1px;
+}
+@media (max-width: 1250px) {
+    .hero-content {
+        padding: 0 50px;
+    }
+}
+@media (max-width: 600px) {
+    .hero-content h3 {
+        width: auto;
+        font-size: 26px;
+        text-align: center;
+    }
+    .hero-content p {
+        width: auto;
+        text-align: center;
+    }
+    .hero-content {
+        align-items: center;
+    }
+}
+@media (max-width: 440px) {
+    .feedback-popup-section {
+        max-width: 300px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phoenix Imperial Bank</title>
+    <link rel="icon" type="image/x-icon" href="./assets/whitelogo.png">
+    <!-- Google fonts cdn --->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap
+    rel="stylesheet"/>
+    <!-- Font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Custom css links -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/widget_nav.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/contactusform.css" />
+    <link rel="stylesheet" href="./styles/newacc.css" />
+    <link rel="stylesheet" href="./styles/investments.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+          <section class="header-logo-container">
+              <a href="./index.html">
+                  <img src="./assets/whitelogo.png" alt="brand logo">
+                  <h1>Phoenix Imperial Bank</h1>
+              </a>
+          </section>
+          <section class="header-nav-container">
+              <!-- <a href="./index.html">Home</a> -->
+              <div class="services-dropdown-nav closed">
+                  <div>
+                      Services
+                      <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                  <div class="services-dropdown">
+                      <a href="./cards.html">Credit Cards</a>
+                      <a href="./new_to_canada.html">New To Canada</a>
+                      <a href="./bankingToStudents.html">Banking To Students</a>
+                      <a href="./newacc.html">New Account</a>
+                      <a href="./investments.html">Investments</a>
+                  </div>
+              </div>
+              <a href="./smart_advice.html">Smart Advice</a>
+              <a href="./about.html">About</a>
+          </section>
+          <button type="button" class="mobile-menu-button close">
+              <i class="fa-solid fa-xmark"></i>
+              <i class="fa-solid fa-bars"></i>
+          </button>
+          <section class="mobile-nav-container close">
+              <a href="./index.html">Home</a>
+              <a href="./cards.html">Credit Cards</a>
+              <a href="./new_to_canada.html">New To Canada</a>
+              <a href="./bankingToStudents.html">Banking To Students</a>
+              <a href="./newacc.html">New Account</a>
+              <a href="./investments.html">Investments</a>
+              <a href="./smart_advice.html">Smart Advice</a>
+              <a href="./about.html">About</a>
+              <section class="mobile-login-section header-login-container">
+                  <a href="#">Login</a>
+                  <a href="#">SignUp</a>
+              </section>
+          </section>
+          <section class="header-login-container">
+              <a href="#">Login</a>
+              <a href="#">SignUp</a>
+          </section>
+      </div>
+  </header>
+<div class="about_banner new_account">
+      <section class="about_first_content">
+        <div class="about_inner_container">
+          <h2>Investments</h2>
+          <p class="about_main_text">
+            <br />
+            From wealth planning to retirement, we’ll help you prepare for
+            financial success with our professional advice and insightful tools.
+          </p>
+        </div>
+      </section>
+    </div>
+    <section class="did-you-know">
+      <h2>Registered Products Offer</h2>
+      <p>
+        Transfer your registered investments to Phoenix and earn up to $4,500.
+
+        &nbsp; <a href="#">Learn more</a>
+      </p>
+    </section>
+
+    <main>
+      <div class="feedback-container">
+        <button id="contact-btn">Contact Us</button>
+        <div class="feedback-popup-background hidden-popup">
+            <div class="feedback-popup-section">
+                <div class="close-popup">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="popup-form-section">
+                    <h4>Let's Get in Touch</h4>
+                    <p>Fill out the form below and someone from our expert team will reach out to you in 24hrs</p>
+                    <form class="form-container"> 
+                        <label class="form-label" for="name"> Name:</label> 
+                        <input class="form-input" type="text" id="name" name="name">
+                        <p class="name-form-error error"></p>
+                        <label class="form-label" for="email"> Email:</label> 
+                        <input class="form-input" type="email" id="email" name="email">
+                        <p class="email-form-error error"></p> 
+                        <label class="form-label" for="query">Query:</label> 
+                        <textarea name="query" id="query" rows="5" style="resize: none"></textarea>
+                        <p class="query-form-error error"></p>
+                        <button class="btn-submit" type="button">Submit</button>
+                        <br>
+                    </form>
+                </div>
+                <div class="thanks-section hide-section">
+                    <h4>Thanks for getting in Touch</h4>
+                    <p>Your inquiry has been submitted and you will be contact by our expert in upto 24hrs.</p>
+                    <div class="tick-mark">
+                        <i class="fa-solid fa-check" style="width: 50px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <section class="hero">
+        <h1>Together, let's help you achieve your financial goals</h1>
+        <p>
+          Invest and grow your wealth at any stage. Get professional advice or
+          chart your own course.
+        </p>
+      </section>
+
+      <section class="account-options">
+        <div class="account-option">
+          <h2>Meet with our advisors</h2>
+          <p>Discuss your goals with us in person or over the phone.</p>
+          <a href="#"
+            >Book a time to meet with our advisorsOpens in a new window..</a
+          >
+        </div>
+
+        <div class="account-option">
+          <h2>Optimize your investments</h2>
+          <p>Learn how to achieve the financial future you want with our</p>
+          <a href="#">investment calculators and tools.</a>
+        </div>
+
+        <div class="account-option">
+          <h2>SMake decisions with confidence</h2>
+          <p>
+            Invest and trade with Phoenix Investor's Edge. Choose from stocks,
+            ETFs, GICs and more.
+          </p>
+          <a href="#">Explore our tools and researchOpens in a new window..</a>
+        </div>
+      </section>
+
+      <section class="bg-gray">
+        <section class="hero">
+          <h1>However you choose to invest, we're here to help</h1>
+          <p>
+            Your investment approach should be as unique as your financial
+            goals. Meet with an expert, customize your own portfolio or try a
+            mix of both.
+          </p>
+        </section>
+
+        <section class="account-options">
+          <div class="account-option">
+            <h2>Get personalized advice</h2>
+            <p>
+              Get our expertise working for you by connecting with our advisory
+              teams, including CIBC Imperial Service and Phoenix Private Wealth.
+            </p>
+            <a href="#">Learn more about our expert advisory teams</a>
+          </div>
+
+          <div class="account-option">
+            <h2>Choose your investments directly</h2>
+            <p>
+              Build your own investment portfolio and enjoy low commissions with
+              Phoenix Investor's Edge.
+            </p>
+            <a href="#">Learn more about Phoenix Investor's Edge</a>
+          </div>
+
+          <div class="account-option">
+            <h2>Browse our selection of accounts and investment options</h2>
+            <p>
+              Define the plan that meets your financial goals with our
+              comprehensive selection of accounts and investments.
+            </p>
+            <a href="#">Explore our accounts and investments</a>
+          </div>
+        </section>
+
+        <section id="Online-Banking">
+          <h2>Exclusive investing with Phoenix Imperial Service®</h2>
+          <p>
+            Phoenix Personal Portfolio Services® provides you with a comfortable
+            investing experience, giving you confidence, freedom and value as
+            your progress towards your investment goals.
+          </p>
+          <a href="#">Learn more about Phoenix Personal Portfolio Services</a>
+        </section>
+      </section>
+
+      <section>
+
+
+        <section class="account-options">
+          <div class="account-option">
+            <h2>Registered Retirement Savings Plan (RRSP)</h2>
+            <p>
+              Enjoy tax deductions now and tax-sheltered growth to help you
+              retire more comfortably. Our retirement investment options are
+              designed to meet your future goals.
+            </p>
+            <a href="#">more..</a>
+          </div>
+
+          <div class="account-option">
+            <h2>Tax-Free Savings Account (TFSA)</h2>
+            <p>
+              Choose from a selection of savings and investment products for
+              your TFSA contributions and pay no taxes on the interest or
+              investment income you earn.
+            </p>
+            <a href="#">more..</a>
+          </div>
+
+          <div class="account-option">
+            <h2>First Home Savings Account (FHSA)</h2>
+            <p>
+              Save for your first home, tax-free. Contributions are tax
+              deductible and withdrawals to purchase a qualifying home are
+              non-taxable1.
+            </p>
+            <a href="#">more..</a>
+          </div>
+        </section>
+
+        <section id="Online-Banking">
+          <a href="#">Explore all investment accounts</a>
+        </section>
+      </section>
+
+      <section class="bg-gray">
+        <section class="hero">
+          <h1>Investments</h1>
+          <p>
+            Build a diverse portfolio tailored to your goals by holding a
+            variety of investments.
+          </p>
+        </section>
+
+        <section class="account-options">
+          <div class="account-option">
+            <h2>Mutual funds</h2>
+            <p>
+              Mutual funds are a professionally managed investment that can
+              offer both diversification and access to areas of interest
+              depending on your financial needs.
+            </p>
+            <a href="#">Link</a>
+          </div>
+
+          <div class="account-option">
+            <h2>Stocks</h2>
+            <p>Opens in a new window.</p>
+            <a href="#">Link</a>
+          </div>
+
+          <div class="account-option">
+            <h2>Guaranteed Investment Certificates (GICs)</h2>
+            <p>
+              Get 100% of your original investment back, plus the interest you
+              earned, at the end of the term.
+            </p>
+            <a href="#">Link</a>
+          </div>
+        </section>
+
+        <section id="Online-Banking">
+          <a href="#">Explore all investments</a>
+        </section>
+      </section>
+    </main>
+    <footer class="footer-container temp-container">
+      <div class="logo-top-branding-container">
+        <div class="logo-logo-container">
+          <img
+            class="brand-logo-sml"
+            src="./assets/whitelogo.png"
+            alt="brand-logo"
+          />
+          <h2 class="footer-brand-heading">Phoenix Imperial Bank</h2>
+        </div>
+        <div class="footer-social-link-container">
+          <ul>
+            <li>
+              <a href="#" class="footer-social-link">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-link">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-link">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-link">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copy-section">
+        <p class="footer-copy-text">&copy; FinTech Coders 2024</p>
+      </div>
+    </footer>
+    <script src="scripts/mobileNav.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="scripts/accordianClick.js"></script>
+    <script src="./scripts/popup.js"></script>
+  </body>
+</html>

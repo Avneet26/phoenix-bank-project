@@ -1,0 +1,216 @@
+main{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.smart_advice_banner{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),url(../assets/family.jpg);
+    /* background-image: url(../assets/family.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+}
+
+.smart_advice_main_text{
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.smart_advice_first_content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1200px;
+}
+
+.smart_advice_inner_container{
+    max-width: 480px;
+    height: 220px;
+    padding: 40px 0;
+    color: white;
+    user-select: none;
+}
+
+.smart_advice_inner_container h2{
+    font-size: 50px;
+}
+
+.smart_advice_widgit_nav {
+	width: 350px;
+	/* border: 1px solid rgba(255, 166, 0, 0.333); */
+	text-decoration: none;
+	align-items: flex-start;
+	background-color: #fffd;
+	border-radius: 25px;
+	display: flex;
+	cursor: pointer;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding: 20px;
+	height: 250px;
+    border: 1px solid grey;
+}
+
+.smart_advice_widgit_nav li {
+	font-size: 13px;
+	margin: 5px 0;
+	list-style: none;
+	color: #666;
+}
+
+.smart_advice_widgit_nav h3 {
+    font-size: 20px;
+    color: black;
+    margin: 20px 0;
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+.smart_advice_widgit_nav svg {
+    background: rgb(135, 142, 255);
+    background: linear-gradient(147deg,#51adee 0%, #1581cd 100%);
+    color: white;
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.smart_advice_widgit_nav:hover {
+    opacity: 1;
+    background-color: white;
+	box-shadow: 2px 2px 30px #0001;
+	transform: scale(1.01);
+} 
+
+.smart_advice_remove_underline {
+    text-decoration: none;
+}
+
+.smart_advice_widgit_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 30px auto; */
+    max-width: 1200px;
+    width: 100%;
+    gap: 10px;
+    margin: 30px 20px;
+
+}
+
+.widget_nav_content {
+    text-align: justify;
+    padding: 0;
+    font-size: 15px;
+    margin: 0;
+    color: #666;
+    line-height:1.2;
+}
+
+
+.smart_advice_body{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 70px;
+    margin: 20px;
+}
+
+.smart_advice_body_content_left{
+    max-width: 350px;
+}
+
+.smart_advice_body_content_left p{
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.smart_advice_body_content_left h3{
+    font-size: 30px;
+}
+
+.smart_advice_body_content_right p{
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-left: 9px;
+    
+}
+
+.button{
+    background-color: #51adee;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 16px;
+    border: 2px solid white;
+    transition: all 200ms ease;
+    margin: 0 5px;
+    margin-bottom: 15px;
+}
+
+.button:hover{
+    background-color: white;
+    color: #51adee;
+    border: 2px solid #51adee;
+}
+
+.smart_advice_body_top{
+    max-width: 1200px;
+    width: 100%;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.footer-container {
+    margin-top: 50px;
+
+}
+
+@media (max-width: 650px) {
+    .smart_advice_widgit_container{
+        width: 300px;
+        flex-direction: column;
+    
+    }
+    .smart_advice_widgit_nav{
+        margin: 20px;
+    }
+    
+    .smart_advice_first_content{
+        margin: 10px 0;
+    }
+
+    .smart_advice_body{
+        flex-direction: column;
+        margin: 20px;
+        gap: 40px;
+    }
+}
+
+@media(max-width:1240px){
+    .smart_advice_inner_container{
+        padding: 20px;
+    }
+    .smart_advice_widgit_container{
+        padding: 20px;
+    }
+    .smart_advice_body_top{
+        padding: 0 20px;
+    }
+    .smart_advice_body{
+        padding: 0 20px;
+    }
+}

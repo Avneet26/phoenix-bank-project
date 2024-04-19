@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
+}
+.contactus-banner{
+    /* display: flex;
+    justify-content: flex-end; */
+    background-image: url('./../assets/laptop.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+    font-family: "PT Sans", sans-serif;
+}
+.content-wrapper{
+    margin:0 auto;
+    display: flex;
+    justify-content: flex-end;
+    max-width:1200px;
+}
+.modal-content {
+    border-style: inherit;
+    background-color: white;
+    border: white solid;
+    border-radius: 5px;
+    margin: 45px 0px;
+    width: 400px;
+    padding: 30px;
+}
+
+.modal-content h3{
+    margin-top: 8px;
+    margin-bottom:12px
+}
+.modal-content h2{
+    margin-top:15px
+}
+.modal-content p{
+    margin-bottom:10px;
+    margin-top:18px;
+    font-size:14px;
+}
+.btn-submit { 
+    background-color: #51adee;
+    padding: 8px 16px; 
+    border: 1px solid; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
+    margin: 20px auto;
+} 
+.btn-submit:hover{
+    color: #1581cd;
+    background-color: white;
+    border:#1581cd solid 1px;
+}
+
+.form-container label,input{
+    margin:8px;
+    margin-left: 0;
+}
+
+.contact-option p {
+	line-height: 1;
+	margin: 10px 0 12px 20px;
+}
+
+.contact-option-container {
+	margin-top: 20px;
+}
+
+.contact-option:nth-child(3) p:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.contact-option path {
+	fill: #51adee;
+}
+
+.contact-option {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+@media (max-width:1200px){
+    .modal-content {
+        margin-right:20px;
+        margin-left:20px
+    }
+}
