@@ -2,27 +2,24 @@
     display: flex;
     justify-content: center;
     height: 400px;
-    /* width: 100%; */
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/Students.jpg);
+    background: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ),url(../assets/Students.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 35%;
     width: 100vw;
 }
-
-.student-content-wrapper {
-    /* margin:0 auto; */
+.student-content-wrapper{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 1200px;
 }
-
 .modal-content {
     border-style: inherit;
-    color: white;
-    /* background-color: white; */
-    /* border: white solid; */
+    color:white;
     background-position: center;
     border-radius: 5px;
     margin: 0px 20px;
@@ -91,8 +88,7 @@ main {
     justify-content: center;
     margin: 5px;
 }
-
-#main-container-2 {
+#main-container-2{
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -118,26 +114,24 @@ div#main-container-2 > div > svg {
     border-radius: 50%;
     padding: 15px;
 }
-/* div#main-container-2 > div h3{
-    min-height: 43px;
-    text-align: center;
-    margin-top: 20px;
-} */
-.Icon-links {
-    margin: 10px;
+.Icon-links{
+    margin:10px;
 }
 .Icon-links a {
     text-align: center;
     color: #51adee;
     text-decoration: none;
 }
-.Student-offers {
+.Icon-links a:hover{
+    text-decoration: underline;
+}
+/* Student Offer section css*/
+.Student-offers{
     display: flex;
-    /* height: 300px; */
     width: 100%;
     margin: 20px;
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 800px;;
 }
 .special-container {
 	display: flex;
@@ -157,7 +151,6 @@ div#main-container-2 > div > svg {
     /* height: auto; */
     border-radius: 10px 0px 0 10px;
 }
-
 .special-info {
     /* background-color: white; */
     padding-left: 20px;
@@ -170,10 +163,7 @@ div#main-container-2 > div > svg {
     align-self: center;
     font-size: 28px;
 }
-#text-info {
-    /* h2 p*/
-}
-.info_container {
+.info_container{
     border: 0.5px solid rgb(164, 163, 163);
     background-color: white;
     height: 300px;
@@ -191,9 +181,9 @@ div#main-container-2 > div > svg {
     justify-content: center;
     margin-top: 30px;
 }
-
-@media screen and (max-width: 700px) {
-    .special-container {
+/* Media query css*/
+@media screen and (max-width:700px) {
+    .special-container{
         flex-direction: column;
         max-width: 400px;
         width: 100%;
