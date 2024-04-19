@@ -1,19 +1,16 @@
-.student-banner{
+.student-banner {
     display: flex;
     justify-content: center;
     height: 400px;
     /* width: 100%; */
-    background: linear-gradient(
-        rgba(0,0,0,0.3),
-        rgba(0,0,0,0.3)
-    ),url(../assets/Students.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/Students.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 35%;
     width: 100vw;
 }
 
-.student-content-wrapper{
+.student-content-wrapper {
     /* margin:0 auto; */
     display: flex;
     justify-content: flex-end;
@@ -23,19 +20,20 @@
 
 .modal-content {
     border-style: inherit;
-    color:white;
+    color: white;
     /* background-color: white; */
     /* border: white solid; */
     background-position: center;
     border-radius: 5px;
     margin: 0px 20px;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     padding: 30px;
 }
-.modal-content h3{
+.modal-content h3 {
     margin: 10px 0px 10px 0px;
 }
-.modal-content h2{
+.modal-content h2 {
     margin: 10px 0px 10px 0px;
 }
 .heading-2 {
@@ -43,10 +41,10 @@
     letter-spacing: 1px;
     font-family: "PT Sans", sans-serif;
     margin: 0px 0px 10px;
-    padding:10px 0px 10px;
+    padding: 10px 0px 10px;
 }
-.StudentButtons{
-    display:flex;
+.StudentButtons {
+    display: flex;
     flex-direction: column;
 }
 .modal-content a {
@@ -59,45 +57,45 @@
     transition: all 200ms ease;
     text-decoration: none;
     inline-size: max-content;
-    margin:2px;
+    margin: 2px;
 }
-.modal-content a:hover{
+.modal-content a:hover {
     color: #1581cd;
-    text-decoration:underline;
+    text-decoration: underline;
 }
-main{
-background-image: url(../assets/background-image.png);
+main {
+    background-image: url(../assets/background-image.png);
     display: flex;
     width: 100vw;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.main-container{
+.main-container {
     background-color: white;
     width: 100vw;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.main-container h1{
+.main-container h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:20px 15px 15px 15px;
+    margin: 20px 15px 15px 15px;
     font-weight: bolder;
 }
-.main-container p{
+.main-container p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:5px;
+    margin: 5px;
 }
 
-#main-container-2{
+#main-container-2 {
     display: flex;
-	align-items: flex-start;
-	justify-content: center;
+    align-items: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     cursor: pointer;
     max-width: auto;
@@ -109,8 +107,8 @@ div#main-container-2 > div {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding:10px;
-    margin:10px;
+    padding: 10px;
+    margin: 10px;
 }
 div#main-container-2 > div > svg {
     width: 30px;
@@ -125,125 +123,86 @@ div#main-container-2 > div > svg {
     text-align: center;
     margin-top: 20px;
 } */
-.Icon-links{
-    margin:10px;
+.Icon-links {
+    margin: 10px;
 }
-.Icon-links a{
+.Icon-links a {
     text-align: center;
     color: #51adee;
     text-decoration: none;
 }
-.Student-offers{
-    border: 0.5px solid rgb(164, 163, 163);
-    height: 300px;
-    width: 800px;
-    margin:20px;
+.Student-offers {
+    display: flex;
+    /* height: 300px; */
+    width: 100%;
+    margin: 20px;
     border-radius: 10px;
-    
+    max-width: 800px;
 }
-.special-container{
+.special-container {
     /* display: flex;
     height: 300px;
     width: 60%;
     border-radius: 10px; */
     display: flex;
     justify-content: space-between;
-    
+    border: 0.5px solid rgb(164, 163, 163);
+
     background-size: cover;
     /* background-repeat: repeat; */
     background-position-y: 40%;
 }
-.Student-offers img{
-    width: 400px;
+.Student-offers img {
+    max-width: 400px;
+    /* width: 100%; */
     height: 300px;
     background-repeat: no-repeat;
-    background: linear-gradient(
-        rgba(0,0,0,0.3),
-        rgba(0,0,0,0.3)
-    );
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     height: 300px;
     border-radius: 10px;
 }
 
-.special-info{
+.special-info {
     background-color: white;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#special-text{
-    padding:5px;
+#special-text {
+    padding: 5px;
     align-self: center;
+    font-size: 28px;
 }
-#text-info{
-/* h2 p*/
+#text-info {
+    /* h2 p*/
 }
-.info_container{
+.info_container {
     border: 0.5px solid rgb(164, 163, 163);
-    background-color:white;
-    height:300px;
-    width:auto;
+    background-color: white;
+    height: 300px;
+    width: auto;
     display: flex;
     justify-content: flex-end;
     align-items: end;
 }
-.horizontal-line{
+.horizontal-line {
     background-color: white;
-    border:2px solid #97caef;
+    border: 2px solid #97caef;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:30px;
+    margin-top: 30px;
 }
-section.accordion {
-    background-color:white;
-    height:auto;
-    width: 100%;
-    padding-bottom: 10px;
-  }
-#accordian-head{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin:20px;
-    padding:5px;
-    font-weight: bold;
-  }
 
-.accordion-header {
-    background-color: #f1f1f1;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-
-.accordion-header:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-
-.accordion-header.active:after {
-    content: "\2212";
-    color:black;
-  }
-
-.accordion-body {
-    padding: 2px 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-  @media screen and (max-width:1200px) {
-    
+@media screen and (max-width: 700px) {
+    .special-container {
+        flex-direction: column;
+        max-width: 400px;
+        width: 100%;
+    }
+    .Student-offers {
+        justify-content: center;
+    }
 }

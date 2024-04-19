@@ -1,19 +1,15 @@
-
-.newcomer-banner{
+.newcomer-banner {
     display: flex;
     justify-content: center;
     height: 400px;
     width: 100%;
-    background: linear-gradient(
-        rgba(0,0,0,0.3),
-        rgba(0,0,0,0.3)
-    ),url(../assets/family_photo1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/family_photo1.jpg);
     background-size: cover;
     /* background-repeat: repeat; */
     background-position-y: 30%;
 }
 
-.content-wrapper{
+.content-wrapper {
     /* margin:0 auto; */
     display: flex;
     justify-content: flex-start;
@@ -23,7 +19,7 @@
 
 .modal-content {
     border-style: inherit;
-    color:white;
+    color: white;
     /* background-color: white; */
     /* border: white solid; */
     background-position: center;
@@ -32,7 +28,7 @@
     width: 350px;
     padding: 30px;
 }
-.modal-content h1{
+.modal-content h1 {
     margin: 10px 0px 15px 0px;
 }
 .modal-content-p {
@@ -40,16 +36,16 @@
     letter-spacing: 1px;
     font-family: "PT Sans", sans-serif;
     margin: 0px 0px 10px;
-    padding:10px 0px 10px;
+    padding: 10px 0px 10px;
 }
-.heading-1{
+.heading-1 {
     line-height: 1.28;
 }
 main {
     background-color: white;
 }
-#special-offer-container p{
-    display:flex;
+#special-offer-container p {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     letter-spacing: 0.04cap;
@@ -62,40 +58,39 @@ main {
     width: 100%;
     background-color: rgb(240, 240, 240);
 }
-#special-offer-image img{
-    height:40px;
-    width:40px;
-    margin:0px;
+#special-offer-image img {
+    height: 40px;
+    width: 40px;
+    margin: 0px;
     padding: 0px;
 }
-.link a{
-    color:rgb(100, 100, 100);
+.link a {
+    color: rgb(100, 100, 100);
     border-bottom: solid 1px transparent;
     cursor: pointer;
 }
-.link a:hover{
-    color:#51adee;
-    
+.link a:hover {
+    color: #51adee;
 }
-.link{
+.link {
     display: inline-block;
-    margin:5px
+    margin: 5px;
 }
-.Main{
+.Main {
     background-image: none;
     background-color: white;
 }
-.main-container h2{
+.main-container h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:20px;
+    margin: 20px;
 }
 
-#main-container-2{
+#main-container-2 {
     display: flex;
-	align-items: flex-start;
-	justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-around;
     cursor: pointer;
     max-width: 1200px;
     margin-bottom: 15px;
@@ -105,8 +100,8 @@ div#main-container-2 > div {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding:10px;
-    margin:10px;
+    padding: 10px;
+    margin: 10px;
 }
 div#main-container-2 > div > svg {
     width: 30px;
@@ -116,65 +111,30 @@ div#main-container-2 > div > svg {
     border-radius: 50%;
     padding: 15px;
 }
-div#main-container-2 > div h3{
+div#main-container-2 > div h3 {
     min-height: 43px;
     text-align: center;
     margin-top: 20px;
 }
-div#main-container-2 > div h3 ~ p{
+div#main-container-2 > div h3 ~ p {
     text-align: center;
 }
-#horizontal-line{
-    border:2px solid #97caef;
+#horizontal-line {
+    border: 2px solid #97caef;
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#accordion {
-    background:white;
-    height:auto;
-    width: 100%;
-    padding-bottom: 5px;
-  }
-#accordian-head{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin:20px;
-    padding:5px;
-    font-weight: bold;
-  }
 
-.accordion-header {
-    background-color: #f1f1f1;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-
-.accordion-header:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-
-.accordion-header.active:after {
-    content: "\2212";
-    color:black;
-  }
-
-.accordion-body {
-    padding: 2px 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
+@media screen and (max-width: 799px) {
+    #main-container-2 {
+        flex-direction: column;
+    }
+    #special-offer-container p {
+        margin-bottom: 0;
+    }
+    #special-offer-div {
+        height: auto;
+    }
+}

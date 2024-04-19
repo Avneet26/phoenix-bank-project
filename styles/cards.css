@@ -1,18 +1,15 @@
-.cards_banner{
+.cards_banner {
     display: flex;
     justify-content: center;
     height: 400px;
     width: 100%;
-    background: linear-gradient(
-        rgba(0,0,0,0.4),
-        rgba(0,0,0,0.4)
-    ),url(../assets/cards_banner.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/cards_banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 10%;
 }
 
-.cards_inner_container{
+.cards_inner_container {
     max-width: 480px;
     height: 220px;
     padding: 40px 0;
@@ -20,29 +17,29 @@
     user-select: none;
 }
 
-.cards_first_content{
+.cards_first_content {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 1200px;
 }
 
-.cards_inner_container h2{
+.cards_inner_container h2 {
     font-size: 50px;
 }
 
-.cards_career_img{
+.cards_career_img {
     max-width: 500px;
 }
 
-.cards_career_img img{
+.cards_career_img img {
     height: 100%;
     width: 100%;
     margin-right: 20px;
     object-fit: cover;
 }
 
-.cards_career{
+.cards_career {
     max-width: 1200px;
     width: 100%;
     display: flex;
@@ -50,29 +47,29 @@
     border: 1px solid #1580cd6e;
 }
 
-.cards_career_text{
+.cards_career_text {
     padding: 20px;
 }
 
-.cards_career_text p{
+.cards_career_text p {
     margin-bottom: 30px;
 }
 
-.cards_career_text a{
+.cards_career_text a {
     text-decoration: none;
     color: #1581cd;
 }
 
-.cards_career_text a:hover{
+.cards_career_text a:hover {
     text-decoration: underline;
 }
 
-.cards_career_text li{
+.cards_career_text li {
     list-style: none;
     margin-bottom: 10px;
 }
 
-.cards_career_news_section{
+.cards_career_news_section {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -80,7 +77,7 @@
     margin-top: 50px;
 }
 
-.cards_section{
+.cards_section {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -88,18 +85,18 @@
     margin-top: 50px;
 }
 
-.cards_img{
+.cards_img {
     max-width: 500px;
 }
 
-.cards_img img{
+.cards_img img {
     height: 100%;
     width: 100%;
     margin-right: 20px;
     object-fit: cover;
 }
 
-.cards_div{
+.cards_div {
     max-width: 373px;
     width: 100%;
     display: flex;
@@ -107,34 +104,34 @@
     border: 1px solid #1580cd6e;
 }
 
-.cards_text{
+.cards_text {
     padding: 20px;
 }
 
-.cards_text a{
+.cards_text a {
     text-decoration: none;
     color: #1581cd;
 }
 
-.cards_text li{
+.cards_text li {
     list-style: none;
     margin-bottom: 10px;
 }
 
-.cards_text h3{
+.cards_text h3 {
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 30px;
 }
 
-.cards_flex{
+.cards_flex {
     display: flex;
     max-width: 1200px;
     width: 100%;
     justify-content: space-between;
 }
 
-#Aventura_card{
+#Aventura_card {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #1581cd;
@@ -142,23 +139,22 @@
     padding-top: 20px;
 }
 
-#Aventura_card_3{
-    
+#Aventura_card_3 {
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
-#card_content{
+#card_content {
     padding-bottom: 50px;
 }
 
-#card_content_last{
+#card_content_last {
     padding-bottom: 10px;
 }
 
-button{
+button {
     padding: 10px;
     background-color: #1581cd;
     color: white;
@@ -166,98 +162,51 @@ button{
     border-radius: 10px;
 }
 
-#card_button{
+#card_button {
     display: flex;
     justify-content: center;
     padding-top: 20px;
 }
 
-.cards_conent{
+.cards_conent {
     max-width: 1200px;
     width: 100%;
     margin-top: 45px;
 }
 
-.cards_conent p{
+.cards_conent p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
-main h3{
-font-weight: 500;
-font-size: 35px;
-margin-top: 35px;
+main h3 {
+    font-weight: 500;
+    font-size: 35px;
+    margin-top: 35px;
 }
-section.accordion {
-    background-color:white;
-    height:auto;
-    width: 100%;
-    padding-bottom: 5px;
-  }
-#accordian-head{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin:20px;
-    padding:5px;
-    font-weight: bold;
-  }
 
-.accordion-header {
-    background-color: #f1f1f1;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-
-.accordion-header:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-
-.accordion-header.active:after {
-    content: "\2212";
-    color:black;
-  }
-
-.accordion-body {
-    padding: 2px 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-
-@media (max-width:1120px){
-    .cards_flex{
+@media (max-width: 1120px) {
+    .cards_flex {
         flex-direction: column;
     }
-    .cards_main_card{
+    .cards_main_card {
         max-width: 80%;
     }
-    .cards_img img{
+    .cards_img img {
         margin-right: 0%;
     }
-    .cards_career{
+    .cards_career {
         flex-direction: column;
     }
 }
 
-@media(max-width:1140px){
-    main h3{
+@media (max-width: 1140px) {
+    main h3 {
         padding: 0 20px;
     }
-    .cards_conent{
+    .cards_conent {
         padding: 0 20px;
     }
     /* .cards_career_news_section{
@@ -266,19 +215,19 @@ section.accordion {
         display: flex;
     flex-direction: column;
     } */
-    .cards_inner_container{
+    .cards_inner_container {
         padding: 0 20px;
     }
-    .cards_career{
+    .cards_career {
         max-width: 373px;
         width: 100%;
         display: flex;
-    flex-direction: column;
+        flex-direction: column;
     }
 }
 
-@media (max-width:425px){
-    .cards_main_section{
+@media (max-width: 425px) {
+    .cards_main_section {
         padding: 20px;
     }
 }

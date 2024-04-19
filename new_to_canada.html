@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>New to Canada</title>
+        <link rel="icon" type="image/x-icon" href="./assets/whitelogo.png">
         <!-- Google fonts cdn --->
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -22,6 +23,7 @@
         <link rel="stylesheet" href="./styles/widget_nav.css"/>
         <link rel="stylesheet" href="./styles/header.css"/>
         <link rel="stylesheet" href="./styles/newToCanada.css">
+        <link rel="stylesheet" href="./styles/accordian.css">
         <!-- <link rel="stylesheet" href="./styles/contactusform.css"> -->
     </head>
     <body>
@@ -43,9 +45,9 @@
                         <div class="services-dropdown">
                             <a href="./cards.html">Credit Cards</a>
                             <a href="./new_to_canada.html">New To Canada</a>
-                            <a href="">Banking To Students</a>
+                            <a href="./bankingToStudents.html">Banking To Students</a>
                             <a href="./newacc.html">New Account</a>
-                            <a href="">Investments</a>
+                            <a href="./investments.html">Investments</a>
                         </div>
                     </div>
                     <a href="./smart_advice.html">Smart Advice</a>
@@ -59,9 +61,9 @@
                     <a href="./index.html">Home</a>
                     <a href="./cards.html">Credit Cards</a>
                     <a href="./new_to_canada.html">New To Canada</a>
-                    <a href="">Banking To Students</a>
+                    <a href="./bankingToStudents.html">Banking To Students</a>
                     <a href="./newacc.html">New Account</a>
-                    <a href="">Investments</a>
+                    <a href="./investments.html">Investments</a>
                     <a href="./smart_advice.html">Smart Advice</a>
                     <a href="./about.html">About</a>
                     <section class="mobile-login-section header-login-container">
@@ -136,11 +138,12 @@
                         </span>
                         <span class="text-container">
                             Refer a newcomer to Phoenix Imperial Bank and you can both earn $50.
+                            <span class="link">
+                                <a href="/en/special-offers/refer-a-friend-new-to-canada.html" target="_self" 
+                                id="buttonid">Learn more about this offer</a>
+                                </span>
                         </span>
-                        <span class="link">
-                        <a href="/en/special-offers/refer-a-friend-new-to-canada.html" target="_self" 
-                        id="buttonid">Learn more about this offer</a>
-                        </span>
+                        
                     </p>
                 </div>
             </div>
@@ -240,26 +243,9 @@
             </div>
         </footer>
         <script src="scripts/mobileNav.js"></script>
-<<<<<<< Updated upstream
-        <script src="./scripts/popup.js"></script>
-
-=======
-        <script>
-            var acc = document.getElementsByClassName("accordion-header");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-                } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-            }
-            </script>
->>>>>>> Stashed changes
+        <script src="scripts/popup.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="scripts/accordianClick.js"></script>
     </body>
 </html>
